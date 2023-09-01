@@ -31,7 +31,8 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  /* width: 100px; */
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -116,4 +117,91 @@ footer p {
   padding: 20px;
 }
 
-/* -------  Media Query ------- */
+
+/* NEW CODE HERE */
+#menu {
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: center;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+img{
+  width: 100%;
+}
+
+/* ------- Really Small mobile media query  ---------- (320px minimum)*/
+
+@media all and (max-width: 400px){
+  /* *{
+    background-color: pink;
+} */
+.logo{
+  font-size: 54px;
+}
+
+}
+
+/* -------  Desktop Media Query -------  breakpoint of 768*/
+
+@media all and (min-width: 768px){
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form div {
+    flex-direction: column;
+    width: 18%;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form input, form select {
+    width: 100%;
+  }
+
+  form button {
+    width: 18%;
+  }
+
+  #about div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+  }
+
+  #about img{
+    width: 25%;
+  }
+
+  .row{
+    display: flex;
+    gap: 10px;
+  }
+
+  .row div{
+    flex: 1;
+  }
+
+  #host{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #host div{
+    flex: 1;
+  }
+
+}
